@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>Checkout</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.checkout{
+
+width:90%;
+max-width:600px;
+margin:40px auto;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+input,
+textarea,
+select{
+
+width:100%;
+padding:12px;
+margin:12px 0;
+border:1px solid #ddd;
+border-radius:8px;
+
+}
+
+button{
+
+width:100%;
+padding:14px;
+background:#7A6552;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="checkout">
+
+<h1>Billing Details</h1>
+
+<input
+type="text"
+id="name"
+placeholder="Full Name">
+
+<input
+type="tel"
+id="phone"
+placeholder="Phone Number">
+
+<textarea
+id="address"
+placeholder="Full Address"></textarea>
+
+<h3>Payment Method</h3>
+
+<select>
+
+<option>UPI</option>
+
+<option>Credit Card</option>
+
+<option>Debit Card</option>
+
+<option>Cash On Delivery</option>
+
+</select>
+
+<br><br>
+
+<button onclick="placeOrder()">
+
+Place Order
+
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
